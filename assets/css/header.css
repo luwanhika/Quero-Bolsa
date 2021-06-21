@@ -1,0 +1,72 @@
+header {
+  height: 100px;
+  background-color: #FFF;
+}
+
+.header {
+  max-width: 1140px;
+  height: 100px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #FFF;
+  color: var(--azul-principal);
+}
+
+.info {
+  display: flex;
+  
+}
+
+.header-info {
+  display: flex;
+  padding-right: 50px;
+}
+
+.usuario-img {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.usuario-img img {
+  width: 24px;
+  height: 24px;
+}
+
+.info .header-info .header-info-orienta {
+  font-weight: 700;
+  color: var(--azul-secundario);
+  display: flex;
+  align-items: center;
+}
+
+.info .header-info .header-info-orienta:first-child {
+  border-right: 4px solid var(--cinza-background);
+  padding: 15px 20px 15px 0px;
+}
+
+.header-0800 .header-0800-ajuda {
+  font-weight: 700;
+  color: var(--azul-secundario);
+}
+.header-0800 .header-0800-mensagem {
+  padding-top: 8px;
+  color: var(--azul-secundario);
+}
+
+.logo {
+  width: 100px;
+}
+
+.header-usuario {
+  display: flex;
+}
+
+.header-usuario .header-usuario-nome {
+  display: flex;
+  align-items: center;
+  color: var(--azul-secundario);
+  margin-right: 8px;
+}

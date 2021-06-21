@@ -1,0 +1,33 @@
+nav {
+  height: 40px;
+  border-top: 3px solid var(--azul-secundario);
+  background-color: var(--azul-principal);
+}
+
+.menu {
+  max-width: 1140px;
+  height: 40px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  color: var(--branco);
+  font-weight: 700;
+}
+
+.menu ul {
+  display: flex;
+}
+
+.menu li a {
+  height: 40px;
+  color: var(--branco);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0px 35px 0px 0px;
+  display: flex;
+  align-items: center;
+}
+
+.menu li a:hover {
+  background-color: var(--azul-secundario);
+}

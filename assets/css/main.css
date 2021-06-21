@@ -1,0 +1,249 @@
+.banner {
+  height: calc(100vh - 140px);
+  background-color: var(--branco);
+}
+
+.banner-container {
+  max-width: 1140px;
+  margin: auto;
+}
+
+.banner-nav-list ul {
+  display: flex;
+  margin-top: 20px;
+}
+
+.banner-nav-list ul li a {
+  text-decoration: none;
+  padding-right: 20px;
+  color: var(--azul-principal);
+}
+
+.titulo {
+  margin-top: 50px;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.desc {
+  margin-top: 15px;
+  color: var(--preto-textos);
+}
+
+.banner-mes {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+.banner-mes .semestre {
+  border-right: 1px solid var(--azul-secundario);
+  border-top: 1px solid var(--azul-secundario);
+  border-bottom: 1px solid var(--azul-secundario);
+  padding: 8px 10px;
+  margin-top: 60px;
+  font-weight: 700;
+  color: var(--azul-secundario);
+  cursor: pointer;
+}
+
+.banner-mes .semestre:first-child {
+  border-left: 1px solid var(--azul-secundario);
+}
+
+.banner-mes .semestre:hover {
+  background-color: var(--azul-secundario);
+  color: var(--branco);
+} 
+
+.banner-mes .todos {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.banner-mes .primeiro {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+
+
+/* Área slide */
+
+.sliders {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  max-width: 1140px;
+}
+
+.slide {
+  width: 266px;
+  height: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid var(--cinza-background);
+  border-left: 2px solid var(--cinza-background);
+  border-right: 2px solid var(--cinza-background);
+  box-shadow: 0px 2px 3px var(--preto-textos);
+  margin-right: 20px;
+  margin-top: 30px;
+} 
+
+.slidearea {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  color: white;
+}
+
+.slidearea .icon-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  border: 4px solid var(--azul-secundario);
+  margin-bottom: 20px;
+}
+
+.slidearea h1 {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.slidearea h2 {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 2;
+}
+
+.slidearea-curso {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  margin: auto;
+  color: white;
+}
+
+.slide-area-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.slide-area-logo img {
+  width: 60px;
+  height: 40px;
+}
+
+.slidearea-curso h1 {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.slidearea-curso h2 {
+  color: var(--azul-secundario);
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slidearea-curso span {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.slidearea-curso h3 {
+  color: var(--amarelo-principal);
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.area-horario {
+  border-top: 2px solid var(--cinza-background);
+  border-bottom: 2px solid var(--cinza-background);
+}
+
+.area-horario .horario-pre {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.area-horario .horario-data {
+  color: var(--preto-textos);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.area-preco {
+  margin-bottom: 12px;
+}
+
+.area-preco .titulo-prec {
+  font-size: 9px;
+  font-weight: 700;
+  color: var(--preto-textos);
+  margin-bottom: 10px;
+}
+
+.area-preco .prec-anterior {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--preto-textos);
+}
+
+.area-preco .prec-atual {
+  color: var(--verde);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.area-preco .prec-atual span {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--preto-textos);
+}
+
+.slidearea-curso .lista-btn .btn-excluir {
+  padding: .5rem .8rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--azul-secundario);
+  border-radius: 4px;
+  border: 1px solid var(--azul-principal);
+  background-color: var(--branco);
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.slidearea-curso .lista-btn .ver-oferta {
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--preto-textos);
+  border-radius: 4px;
+  border: 1px solid var(--amarelo-secundario);
+  background-color: var(--amarelo-principal);
+  cursor: pointer;
+}

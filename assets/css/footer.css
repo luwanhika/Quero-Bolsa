@@ -1,0 +1,64 @@
+footer {
+  
+}
+
+.container-footer {
+  background-color: var(--azul-secundario);
+}
+
+.section-services {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.section-service {
+  flex: 1;
+  text-align: center;
+  text-align: justify;
+}
+
+.ajuda {
+  display: flex;
+  
+}
+
+.service-image {
+  margin-right: 15px;
+}
+
+.section-service h4 {
+  margin-bottom: 8px;
+  color: var(--branco);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.section-service p {
+  margin-bottom: 8px;
+  color: var(--branco);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.container-reserved-right {
+  background-color: var(--azul-principal);
+}
+
+.section-reserved {
+  max-width: 1140px;
+  margin: auto;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-reserved h4 {
+  color: var(--branco);
+  font-size: 12px;
+  font-weight: 700;
+}

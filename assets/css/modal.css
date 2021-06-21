@@ -1,0 +1,277 @@
+.modal-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(31, 45, 48, 0.88);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-container.ativo {
+  display: flex;
+}
+
+.modal {
+  background-color: var(--branco);
+  min-width: 600px;
+  padding: 50px;
+  position: relative;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.ativo .modal {
+  animation: modal .3s forwards;
+}
+
+.fechar {
+  top: -30px;
+  right: 0px;
+  border: none;
+  position: absolute;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: var(--branco);
+  background-color: rgba(31, 45, 48, 0.0);;
+}
+
+.modal .mod-titu {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--preto-textos);
+  margin-bottom: 8px;
+}
+
+.moda .mod-parag {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--preto-textos);
+}
+
+.modal select {
+  width: 100%;
+  padding: .7rem 5rem;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal label {
+  display: flex;
+  margin: 1rem 0 .5rem 0;
+}
+
+.modal .container-form {
+  display: flex;
+  margin-top: 24px;
+}
+
+.modal .select-form {
+  margin-right: 14px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-ranges {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper .wrapper-1 {
+  margin-right: 20px;
+}
+.wrapper .wrapper-1 h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--preto-textos);
+}
+
+.wrapper .wrapper-2 h3 {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+  font-size: 12px;
+  color: var(--preto-textos);
+}
+.modal-period  h2 {
+  margin-bottom: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--preto-textos);
+}
+
+.modal-range {
+  max-width: 320px;
+  width: 100%;
+}
+
+.modal-range h2 {
+  margin-bottom: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--preto-textos);
+}
+
+.modal-range .value {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: var(--preto-textos);
+}
+
+.modal-range .slider input {
+  max-width: 320px;
+  width: 100%;
+  cursor: pointer;
+  -webkit-appearance: none;
+  height: 3px;
+  background: var(--azul-principal);
+}
+
+.modal-range .slider input::-moz-range-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  background-color: var(--branco);
+  border-radius: 50%;
+  border: 1px solid var(--azul-principal);
+} 
+
+.modal-resultados {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.resultado-titulo {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-resultados .result-ordem select {
+  border: none;
+  padding-right: 20px;
+  color: var(--azul-secundario);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.modal-resultados .result-ordem select > span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--preto-textos);
+}
+
+.list-facul {
+  display: flex;
+  border-top: 4px solid var(--cinza-background);
+  border-bottom: 4px solid var(--cinza-background);
+  padding: 8px 0px;
+}
+
+.list-facul .list-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.list-facul input {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.list-facul img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  margin-left: 15px;
+  vertical-align: middle;
+}
+
+.curso-level {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+
+.curso-level .curso-anhaguera {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--azul-secundario);
+  margin-bottom: 8px;
+}
+
+.curso-level .level-anhaguera {
+  font-size: 12px;
+  color: var(--preto-textos);
+}
+
+.list-facul .oferta-preco {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.list-facul .oferta-preco h3 {
+  font-size: 12px;
+  color: var(--preto-textos);
+  margin-bottom: 6px;
+}
+
+.list-facul .oferta-preco span {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--verde);
+}
+
+.area-btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-cancelar {
+  color: var(--azul-secundario);
+  border: 1px solid var(--azul-principal);
+  background-color: var(--branco);
+  border-radius: 4px;
+  padding: .7rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
+
+.btn-add {
+  color: #82898A;
+  border: 1px solid #82898A;
+  background-color: #CACDCE;
+  border-radius: 4px;
+  padding: .7rem 2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  margin-right: .5rem;
+}
