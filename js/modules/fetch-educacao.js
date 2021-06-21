@@ -7,7 +7,7 @@ async function fetchEducacao(url) {
   const educacaoJSON = await educacaoResponse.json();
 
   educacaoJSON.forEach(cidade => {
-    console.log(cidade.campus.city);
+    console.log(cidade.campus.city.length);
     createEducacao(cidade);
   });
 }

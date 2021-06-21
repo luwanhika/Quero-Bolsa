@@ -31,3 +31,7 @@ nav {
 .menu li a:hover {
   background-color: var(--azul-secundario);
 }
+
+.menu-menu {
+  display: none;
+}
